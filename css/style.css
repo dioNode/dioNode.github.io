@@ -1,0 +1,146 @@
+h1{
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#headerContent {
+	display: none;
+	background-color: rgba(0,0,0,0.7);
+}
+
+header a, button a {
+	text-decoration: none;
+	color: inherit;
+	padding: inherit;
+}
+
+button a{
+	height: inherit;
+}
+
+.milestone img {
+	width: 40%;
+	display: inline;
+	position: relative;
+}
+
+header .headerItems {
+	height: 70px;
+	display: inline-block;
+	cursor: pointer;
+	margin: 10px;
+	opacity: 0.9;
+}
+
+header .headerItems:hover{
+	opacity: 1;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	opacity: 0.7;
+	z-index: 2;
+}
+
+header:hover{
+	opacity: 1;
+}
+
+footer{
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	opacity: 0.6;
+}
+
+footer p{
+	font-size: 14px;
+	color: black;
+}
+
+#dropDownArrow {
+	
+	height: 20px;
+	padding: 6px;
+	background-color: black;
+	border-radius: 0 0 5px 5px;
+	cursor: pointer;
+}
+
+#dropDownArrow:hover{
+	opacity: 1;
+}
+
+img{
+	border-radius: 10px;
+}
+
+#nav {
+	position: fixed;
+	width: 50px;
+	border: solid white;
+	opacity: 0.9;
+	cursor: move;
+	padding: 10px 2px 10px 2px;
+	border-radius: 6px;
+	right: 50px;
+	top: 50px;
+	z-index: 2;
+}
+
+#current{
+	opacity: 1;
+	border: solid;
+}
+
+#nav img{
+	width: 40px;
+	cursor: pointer;
+	opacity: 0.5;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#nav img:hover{
+	opacity: 0.9;
+}
+
+#nav .pointers{
+	width: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.scroller{
+	margin: auto;
+	height: 60px;
+	cursor: pointer;
+	opacity: 0.3;
+	padding-top: 50px;
+	display: relative;
+}
+
+.scroller:hover{
+	opacity: 0.6;
+}
+
+button {
+	background: none;
+	border-color: #D1D3CF;
+	color: #D1D3CF;
+	font-size: 40px;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	display: block;
+	margin: auto;
+}
+
+button:hover {
+	background-color: #6B82A8;
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Dion's portfolio</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/infopages.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="headerContent">
+				<a title="Home" href="index.html"><img src="images/logoIcon.png" class="headerItems" id="homeIcon"/></a>
+				<a title="About Me"href="aboutme.html"><img src="images/profileIcon.png" class="headerItems" id="aboutIcon"/></a>
+				<a title="Portfolio" href="portfolio.html"><img src="images/portfolioIcon.png" class="headerItems" id="portfolioIcon"/></a>
+				<a title="Reflection" href="reflection.html"><img src="images/reflectionIcon.png" class="headerItems" id="reflectionIcon"/></a>
+			</div>
+			<img src="images/downarrow.png" onclick="dropDown()" id="dropDownArrow"/>
+		</header>
+
+		<div id="nav" class="draggable">
+			<img onclick="scroll(0)" title="Go Up" src="images/uparrow.png">
+			<img class="pointers" title="Infomation Cover" id="current" onclick="scrollTo('#infoCover');selectPointer(event)" src="images/navPointer.png">
+			<img class="pointers" title="Meeting Expectations" onclick="scrollTo('#meetingExpectations')" src="images/navPointer.png">
+			<img class="pointers" title="Learning" onclick="scrollTo('#learning')" src="images/navPointer.png">
+			<img class="pointers" title="Changes" onclick="scrollTo('#changes')" src="images/navPointer.png">
+			<img onclick="scroll(1)" title="Go Down" src="images/downarrow.png">
+		</div>
+
+		<section id="infoCover">
+			<div class="details">
+				<h1>Virtual Wall</h1>
+				<h3>Here I reflect on the outcome of the project. I discuss expectations, things I learned and ways to improve.</h3>
+				<div class="extra">
+					<p>Virtual Wall is a virtual simulation of a wall which allows users to pin information onto it. It allows users to fill their wall with information and make sense of them by moving them around and linking them to one another. Thus, allowing users to visualise and analyse their information with ease.</p>
+					<button><a target="_blank" href="http://deco1800-201.uqcloud.net/">View Website</a></button>
+				</div>
+				
+				<img src="images/dropdown.png" id="virtualDrop"/>
+				<img src="images/virtual wall logo cut.png" id="virtualCutLogo"/>
+			</div>
+		</section>
+		<section id="meetingExpectations">
+			<h1>Meeting Expectations</h1>
+				<p>Looking back through my <a href="http://s43933628deco1800journal.blogspot.com.au/2016/08/initial-thoughts-on-course.html">first post</a> of my blog, my first impression was cautious. At first glance, designing a website as a team seemed like a lot of fun but I was hesitant to make assumptions due to the similarities it seemed to have with another course called DECO1100. But finishing the course, I have nothing but pride in our work and the progression within the semester. As a result, I had enjoyed the course more than I had anticipated. Towards the end, I had trouble trying to restrain myself from putting all my time into this course as opposed to other, more pressing, assessment. </p>
+				<p>The course exceeded my expectation with the web project implementation in particular. Although there was little to no programming taught throughout the semester, having those milestones where we could observe other group’s progress really brought out my competitive spirit, and I was able to learn more programming than I thought on my own and off my teammate’s code. So as I progressed through the course, my expectations grew wider as it became clearer as to what I was able to achieve.</p>
+		</section>
+		<section id="learning">
+			<h1>Learning across the course</h1>
+				<p>As I progressed into the semester, I found that the teaching in DECO1800 was minimal and seemed to rely on self-learning. The workshops were for assistance and check-ups, the contacts were for group organisation and the lecture, while interesting, didn’t appear very relevant or helpful to the task at hand. Despite that, I do respect that style of teaching since gives us more freedom and closer resembles the scenario in real life. The most helpful activities, I found, were the prototypes and presentation. These forced us to work towards a smaller goal. And seeing other group’s project helped me a lot with gauging the expectation required and generated a competitive atmosphere which helped me with the drive to work harder. </p>
+		</section>
+		<section id="changes">
+			<h1>Changes to improve experience</h1>
+				<h2>Course</h2>
+					<p>All the milestones and tasks through the semester were quite helpful so I was happy that they were structured as they were. However, I think that the marking scheme and weighting were not very logical. The project implementation itself, which was the final outcome of what we produced, ended up being worth less than the portfolio – which was an afterthought when going through the semester. In addition, between the portfolio, blogs and reports, it felt like a massive part of the course was spent purely on reflection. Although I understand the importance of reflection, I don’t think it warrants so much effort and the heavy mark weighting. If less focus was put into reflection and more into the implementation itself, I feel like I would learn a lot more and the course would be more exciting. </p>
+				<h2>Project outcome</h2>
+					<p>The aim of the team project had always felt the same – to create a tool to help organised data visually. And although the target audience and visual design shifted quite a bit throughout the semester, the goal stayed the same. When going through the implementation phase initially, I had hoped to have two major responsibilities within the team. John would develop the algorithms, and I would incorporate them into the page. However, that meant I had to read through and understand all the code that he wrote and it was problematic a times trying to understand the variables and functions he used. That took too much time. So we ended up both working on the final website. Although this ended up saving time, there were a lot of crossovers and redundant code due to the error testing. The console log was constantly filled up, making it hard to find the necessary ones and the code files got bigger and bigger. To make matters worse, we had slightly different coding methods and the organisation of code was very different. As a result, it became very hard to read and understand what was happening towards the end. </p>
+					<p>An easy solution to this problem in my next project would simply be to plan everything out earlier so we know what should go where. And more importantly, we needed to write cleaner code at the start that was intuitive and easy to recycle. </p>
+				<h2>Personal approach</h2>
+					<p>Within the group, it was my responsibility to assign roles to everyone and ensure everything was going according to plan – partly because I’m the only one who knew everyone before we had formed groups. However, since I was already friends with them, I didn’t think I needed to take a strict implementation plan approach since I knew what everyone was already capable of. I tried to assign tasks evenly and make sure everyone felt like they were contributing. </p>
+					<p>However, as the semester went on and report marks came back, it was clear that some members to more advance at specific roles than others. And towards the end, I ended up assigning much more work to some individuals than others because I saw that as the best way to get the task done efficiently. This ended up working really well but drained those individuals who had to carry most of the work load. I think that ultimately it was important to put the group’s benefits ahead of the individuals and recognise that although some people may not excel at some things, they will always still be useful, and it’s the leader’s responsibility to make use of that.</p>
+		</section>
+
+		<footer>
+			<p>Website created by Dion Lao</p>
+			<p>Contact me on 0422 629 006</p>
+			<p>DECO1800 Project - Virtual Wall</p>
+		</footer>
+
+	</body>
+</html>

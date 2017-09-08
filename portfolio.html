@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Dion's portfolio</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/infopages.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="headerContent">
+				<a title="Home" href="index.html"><img src="images/logoIcon.png" class="headerItems" id="homeIcon"/></a>
+				<a title="About Me"href="aboutme.html"><img src="images/profileIcon.png" class="headerItems" id="aboutIcon"/></a>
+				<a title="Portfolio" href="portfolio.html"><img src="images/portfolioIcon.png" class="headerItems" id="portfolioIcon"/></a>
+				<a title="Reflection" href="reflection.html"><img src="images/reflectionIcon.png" class="headerItems" id="reflectionIcon"/></a>
+			</div>
+			<img src="images/downarrow.png" onclick="dropDown()" id="dropDownArrow"/>
+		</header>
+
+		<div id="nav" class="draggable">
+			<img onclick="scroll(0)" title="Go Up" src="images/uparrow.png">
+			<img class="pointers" title="Infomation Cover" id="current" onclick="scrollTo('#infoCover');selectPointer(event)" src="images/navPointer.png">
+			<img class="pointers" title="Part A" onclick="scrollTo('#PartA')" src="images/navPointer.png">
+			<img class="pointers" title="Part B" onclick="scrollTo('#PartB')" src="images/navPointer.png">
+			<img class="pointers" title="Part C" onclick="scrollTo('#PartC')" src="images/navPointer.png">
+			<img class="pointers" title="Portfolio" onclick="scrollTo('#Portfolio')" src="images/navPointer.png">
+			<img onclick="scroll(1)" title="Go Down" src="images/downarrow.png">
+		</div>
+
+		<section id="infoCover">
+			<div class="details">
+				<h1>Virtual Wall</h1>
+				<h3>Here I document all of my progress and design decisions for the project. Analysis of the code and reasoning for particular functions are found here.</h3>
+				<div class="extra">
+					<p>Virtual Wall is a virtual simulation of a wall which allows users to pin information onto it. It allows users to fill their wall with information and make sense of them by moving them around and linking them to one another. Thus, allowing users to visualise and analyse their information with ease.</p>
+					<button><a target="_blank" href="http://deco1800-201.uqcloud.net/">View Website</a></button>
+				</div>
+				
+				<img src="images/dropdown.png" id="virtualDrop"/>
+				<img src="images/virtual wall logo cut.png" id="virtualCutLogo"/>
+			</div>
+		</section>
+	
+
+		<section id="main">
+			
+			<div id="PartA" class="milestone">
+				<h1>Major Project - Part A</h1>
+
+				<h2>Documentation</h2>
+					<p>Part A of Major Project was all about searching for an idea we were all interesting in pursuing and setting the tone for the semester. My first major contribution was in idea generation. I lack confidence in the quality of ideas but I try to make up for it in quantity. By the time we needed to present our 5 individual ideas, I had 14 solid ones I was proud of – ranging from treasure maps, to team builders, to government conspiracy builders. But the idea our team decided to go with, started off as a trophy room idea – where geeks could show off their proud findings to the world. Eventually, the idea developed into Virtual Wall, a more tool-focused application. </p>
+					<p>Being the two design focused students in the team, Vivian and I took initiative over most of the design tasks, starting with logos. I came up with the team name ‘Alpha Designs’ because I was in a team with high school friends who I had competed with in the past, and wanted a proud sounding name. So I ended up designing the team logo and Vivian did the Virtual Wall logo.</p>
+					<img title="Alpha Designs Logo" src="images/Alpha designs logo.png"/>
+					<img title="Virtual Wall Logo" src="images/virtual wall logo.png"/>
+					<p>Moving into the project, Vivian and I developed the design for the poster while Peter and John focused on potential functionality and plausibility. </p>
+					<img title="First sketch" src="images/poster_initialDesign.jpg"/>
+					<p>Since the first sketch, I had wanted to make the poster similar to the website so viewers could tell straight away what kind of application it would turn out to be. Because Virtual Wall was a simulation of a real wall, we could use anything that could be found on a wall – like trophies, computers and paper. And I wanted to use those objects to double as informative poster pieces as well as elements within the application. Based on those ideas, I designed the first poster version with the help of Vivian using Adobe Illustrator – a program I’ve had prior experience in. </p>
+					<img title="Dark design" src="images/poster dark.png"/>
+					<img title="Light design" src="images/poster light.png"/>
+					<p>The first designs were packed with information and hidden elements that I though the viewers could read through. Small hints such as the cursor dragging the faded screen to the right of the computer indicated that the user could post pins by searching from the computer and dragging them out. The medals were in the shape of screen icons because you could click them to access home, settings, and profile information. Along with the batman profile picture and digital clock with the team name, I had hoped to convey as much information for the capabilities for our potential application as possible – all without compromising the integrity of the website by adding something that shouldn’t be on the wall. However, after getting our supervisors to check over the work, it was obvious that I hadn’t accounted for the small scale of the text since I thought viewers would be reading the content from much closer. And since the poster was meant to be a prompt for the speech, it was clear that it was far too messy.</p>
+					<img title="Final Poster" src="images/poster new.png"/>
+					<p>The above poster was the result of all the changes I had made after hearing about the feedback. I made an effort to focus instead on clarity and readability, making sure the user could follow the order of the pins. I retained the original idea to keep it consistent with how the application could look but I made sure to expand the area covered by information and allow the users to read through the poster easily. </p>
+					<p>Throughout the process of creating the poster, due to the design focus towards making it similar to the actual application, I’d come across a lot of ideas on how to improve our project. I had suggestions for a money system – to make it more like game and reward points for pins that other people enjoyed; or being able to share walls with friends and develop them together; or making the pins a reward for mini games that you could play inside the computer.  However, most of these ideas were disregarded either due to difficulty or lack of consistency with our application goal.</p>
+					<p>As for the report, I decided to split the sections evenly. And since I had been friends with everyone before the project, I tried to allocate sections where I could bring out everyone’s strengths. </p>
+					<img title="Concept Document Plan" src="images/concept document plan.jpg"/>
+				<h2>Reflection</h2>
+					<p>After finalising the report, the group had quite a good idea of what we were hoping to achieve for the project. So in my opinion, regardless of the report marks, the process was a success. By the end of the report, I was itching to dive into the code and start programming. Upon reflection, I should have looked into the Trove guide in more depth and tried to understand it more at the time. That ended up hurting me later when I had to learn it through John’s code. As for the process, our timing was fine but I felt I should’ve taken up more of the report sections since I was more comfortable writing and would’ve potentially gotten us more marks.</p>
+			</div>
+			<div id="PartB" class="milestone">
+				<h1>Major Project - Part B</h1>
+				<h2>Documentation</h2>
+					<p>The second phase kicked off with the paper prototype. As always, Vivian and I worked on the design of the prototype and tried to draw all the main web elements. The designs were relatively easy since most parts had already been done for the poster. </p>
+					<img title="Paper Prototype" src="images/paper prototype.jpg"/>
+					<p>I tried to make each piece as realistic as possible so users would hopefully react the same way as they would with a computer interface. On the day, several things stood out about our design:</p>
+					<p>
+						<ol>
+							<li>The cut outs were too small and detailed so user’s had trouble reading what was on it and were unable to locate the buttons.</li>
+							<li>The search algorithm was confusing and it was not obvious that clicking on the computer would initiate a search.</li>
+							<li>No one double clicks on paper.</li>						
+						</ol>
+					</p>
+					<p>After that day, I saw so many things wrong with our application, but also so many opportunities. But the main problem was this – if having a computer screen to initiate a search was unintuitive, then no other physical item would be a logical replacement. If no other item could represent a search, then a search bar would be the logical alternative. And if one of the screen elements was non-physical, then why would we need everything else to be? On that thought, I decided to redesign everything, but without telling the team to avoid a panic.</p>
+					<img title="New Interface Design" src="images/web design.png"/>
+					<p>The new design was completely different visually, but contained the same functionalities. With this, it was clear that the target audience would those using it for more of an academic purpose – a change I was quite happy about. Tearing my old designs, especially the medals, was heartbreaking but there was no way to keep them without it standing out. Thankfully, this change was worth the while and the interface and interactivity because much clearer. From simply looking at the design, we could tell what we needed to work towards.</p>
+					<p>Moving on to the implementation, the first step was creating the MVP – the functions that the application could not operate without. While I was working on the design, John – one of our top programmers, had started experimenting with ways to implement the MVP’s. His job was to develop these core concepts, disregarding visuals and suitability. He just needed to make it work. By the time I had finished the design, he had made rough functions for line drawing, dragging and recording the pin’s movement, and expanding and shrinking a div – a function we later removed. It was my job to add those into the main website. </p>
+					<p>Starting off simple, my first task was to set up the divs and figure out where everything was going to go. Some adjustments went into the CSS to get it looking closer to the proposed design. Next I started implementing the search window, making it draggable and designing the filter tabs.</p>
+					<img title="Dragging" src="images/dragging.gif"/>
+					<img title="Searching" src="images/search.gif"/>
+					<p>The next focus was the search results and I premade a search card div to fill the information in. Then after the searches came through, all I had to do was add the details into the html and append that onto the output section of the search window. From then I reconfigured another one of John’s functions to generate a pin on the wall.</p>
+					<p>After enabling the pin generation, it was time to customise them and start adding interactivity. John added a rough line function and the pins were starting to take shape.</p>
+					<img title="Drawing Lines" src="images/pin lines.png"/>
+					<p>At that stage I began planning how to best approach the pin interaction and figuring out how best to display them. I wanted to let the users display the information they wanted but having too much on pin would easily overcrowd it. That was when I came up with the pin cover and navigation idea.</p>
+					<img title="New Cover Design" src="images/pin cover design.png"/>
+					<p>When users hover over the pins, a tool list and cover could drop down, allowing users to interact with the pins individually. The tool features allowed the users to flip pin, view details, write comment, draw line and delete pin. Their functions were fairly conventional with the exception of one tool – the pin flip. This idea basically meant that each pin would store two sets of information. Upon using the pin flip, the user could switch those two to show the other. That way, similar to how you’d fold a newspaper when putting it on display, the user could choose to show only the part they wanted, and leave out the unnecessary details.</p>
+					<img title="Pin Cover" src="images/working pin cover.gif"/>
+					<p>In order to initiate a search, a user would need to enter input into a search bar on the wall – which would open up the search window and output the searches. Since there were two search inputs – one on the wall and one in the search window, all I had to do for the input on the wall was detect if the enter key was clicked then show the search window, add the value into the other input and run the same search query. </p>
+					<p>Again, I wrote up an allocation for the report structure to get it written as efficiently as possible. </p>
+					<img title="Progress Report Plan" src="images/progress report plan.jpg"/>
+				<h2>Reflection</h2>
+					<p>Before the progress demonstration, I was really happy with how far we’d come. I hadn’t had very high expectations coming in and wasn’t sure about the extent of our capabilities as a team. However, seeing everyone else’s project and how far they’d gotten triggered my competitive mind frame and I felt like we should’ve been much further ahead – considering the amount of experience we had in our team members. I suddenly felt the urge to spend more and more time in the project. That desire ended up helping a lot after and my work ethic started to pick up from there. Looking back, the website turned out decent but I would’ve liked to spend more time working on it beforehand. The report was organised and we got everything done quite easily but the mark was disappointing. And based on the mark allocation, I felt I should’ve picked better jobs to allocate to the team and checked over everyone else’s work.</p>
+			</div>
+			<div id="PartC" class="milestone">
+				<h1>Major Project - Part C</h1>
+				<h2>Documentation</h2>
+					<p>Approaching the final stage was a time where all I focused on was getting as many functions code as possible. First, I drew up a list then I started crossing them off one by one. Then, approaching the trade show, I got everyone to add bugs that were in the system so I could try and fix them all before presentation. </p>
+					<p>By the time of the trade show, I had:</p>
+					<p>
+						<ul>
+							<li>Built the database</li>
+							<li>Implemented a save query</li>
+							<li>•	Fixed to lines draw to go from pin to pin and activate when pressing from both the pin image and the tool</li>
+							<li>Changed the search cards to a more simplistic design</li>
+							<li>Added a view window that would display the search details when a search card is clicked or a pin is viewed</li>
+							<li>Changed the pin create system to go directly onto wall instead of trolley then wall</li>
+							<li>Implemented settings to allow users to change the theme of the wall</li>
+							<li>Generated error messages to indicate if users had entered nothing or there were no results</li>
+							<li>Change pin aesthetic so there was no longer an intimidating red cover div when hovering over them. Instead, it had a box shadow to show depth and feel more neutral. </li>
+							<li>Allowed users to change the width of a pin</li>
+							<li>Finalised the loading pin function </li>
+							<li>Allowed users to change walls and keep everything saved all different walls</li>
+							<li>Enabled profile details to be shown on wall</li>
+						</ul>
+					</p>
+					<img title="Final Design" src="images/final screen.png"/>
+					<p>Following the trade show, I was happy with how it went but it was obvious there were still a few bugs in the system. The search query was slow and the pin view was dodgy. So before the project was due, John and I worked on fixing all the bugs with the pin code and making sure the load displayed everything properly. We also got everyone’s API key to rotate on each search so it wouldn’t timeout as fast. As a final touch, I put in a loading symbol to indicate that the application was functioning and to stop users from spamming the system.</p>
+				<h2>Reflection</h2>
+					<p>Overall, part C was a huge improvement in terms of sheer code and functionality produced. It had become much easier to code when I started getting into it and getting more confident in my ability. One crucial part I would definitely improve for my next project would be the clarity of code. Whilst there were well written functions, reading over the code on some of my team mates was a struggle. I couldn’t understand what the code was doing based on the comments so I had to go through each step to read and understand what it was doing. Within the middle of implementation, I had tried to separate JavaScript files to stop them from going too long but even that wasn’t enough. If I could do it again, I would make sure to not take shortcuts when writing functions and not be afraid to rewrite other people’s code. </p>
+			</div>
+			<div id="Portfolio" class="milestone">
+				<h1>Major Project - Portfolio</h1>
+				<h2>Documentation</h2>
+					<p>Creating the portfolio was a bit worrying at first since I had put it off for a long time and I was worried I would’ve forgotten everything that happened at the beginning. Luckily, I had made sure to make lots of posts on my blog throughout the semester so it was easy to follow and write about. I spent a lot of time trying to figure out what kind of website suited me best but I couldn’t spend too much time on it since there were big exams coming up rapidly for my other subjects.</p>
+					<p>For the portfolio website design, I wanted to make something that suited who I was. I like websites that are clean and efficient, making them easy to read and go through. However, I also wanted to showcase my skills without it interfering with that style. Building fun and seamless navigations was the method I decided to pursue. These allow users to easily navigate the page but are easy to ignore. </p>
+					<p>Another thing I wanted to do was build this website so that I could continue to build on it and make it better through my career. It is a great way to showcase what I can do and the style I like to adopt.</p>
+				<h2>Reflection</h2>
+					<p>Creating the online portfolio was quite fun for me, in contrast to the other study and assessment I had going on. As a result, I was happy to spend lots of time in producing something that I was happy with. The portfolio was successful in presenting my progress in a neat and clear fashion. One thing I would improve would be to add more variation to the pages to make them more interesting, instead of leaving bland text in places. This would allow readers to find it easier to browse through the portfolio.</p>
+
+			</div>
+		</section>
+
+		<footer>
+			<p>Website created by Dion Lao</p>
+			<p>Contact me on 0422 629 006</p>
+			<p>DECO1800 Project - Virtual Wall</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Dion's portfolio</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/infopages.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="headerContent">
+				<a title="Home" href="index.html"><img src="images/logoIcon.png" class="headerItems" id="homeIcon"/></a>
+				<a title="About Me"href="aboutme.html"><img src="images/profileIcon.png" class="headerItems" id="aboutIcon"/></a>
+				<a title="Portfolio" href="portfolio.html"><img src="images/portfolioIcon.png" class="headerItems" id="portfolioIcon"/></a>
+				<a title="Reflection" href="reflection.html"><img src="images/reflectionIcon.png" class="headerItems" id="reflectionIcon"/></a>
+			</div>
+			<img src="images/downarrow.png" onclick="dropDown()" id="dropDownArrow"/>
+		</header>
+
+		<div id="nav" class="draggable">
+			<img onclick="scroll(0)" title="Go Up" src="images/uparrow.png">
+			<img class="pointers" title="Infomation Cover" id="current" onclick="scrollTo('#infoCover');selectPointer(event)" src="images/navPointer.png">
+			<img class="pointers" title="Background" onclick="scrollTo('#background')" src="images/navPointer.png">
+			<img onclick="scroll(1)" title="Go Down" src="images/downarrow.png">
+		</div>
+
+		<section id="infoCover">
+			<div class="details">
+				<h1>About Me</h1>
+				<h3>The page features everything you need to know about me and what I do</h3>
+
+			</div>
+			<img id="myLogo" src="images/MyLogoCut.png"/>
+		</section>
+		<section id="background">
+			<h1>Background</h1>
+			<img title="Me" id="profilePic" src="images/japan-profile.jpg"/>
+			<p>Hi, my name is Dion and I study Engineering and Information Technology at the University of Queensland, majoring in Mechatronics and User Experience Design. My parents came from Macao but I was born and raised in Brisbane. I attended high school at St Joseph’s College, Gregory Terrace before persuing my studies in university. All throughout my life I’ve had a deep fascination with everything futuristic and I’ve wanted to build something that could change the way we live. The prospect of the future excites me greatly and my dream is to find a career where I can be play a role in making things better through technology. I want to find a job with the sole purpose not to make money, but to immerse my all into – knowing that what I do is that important. </p>
+		</section>
+
+		<footer>
+			<p>Website created by Dion Lao</p>
+			<p>Contact me on 0422 629 006</p>
+			<p>DECO1800 Project - Virtual Wall</p>
+		</footer>
+
+	</body>
+</html>

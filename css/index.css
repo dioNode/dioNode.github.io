@@ -1,0 +1,275 @@
+body {
+	margin: 0px;
+	background-color: #F5F5F5;
+	text-align: center;
+	color: #D1D3CF;
+}
+
+
+h1 {
+	font-size: 40px;
+}
+
+html{
+	height: 100%;
+}
+
+p {
+	font-size: 20px;
+}
+
+section h1{
+	font-size: 70px;
+}
+
+section p{
+	font-size: 35px;
+}
+
+.main {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#logo{
+	position: absolute;
+	opacity: 0.3;
+	left: 150px;
+	top: 100px;
+}
+
+#title{
+	padding: 0;
+	margin-top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #0F1626;
+	display: block;
+	color: #F5F5F5;
+	font-family: "Arial Black", Gadget, sans-serif;
+	margin: 0;
+}
+
+#title h1, #title h2{
+	left: 500px;
+	position: absolute;
+}
+
+#title h1{
+	top: 200px;
+	font-size: 100px;
+}
+
+#title h2{
+	top: 400px;
+
+}
+
+#title button{
+	position: absolute;
+	left: 500px;
+	top: 480px;
+}
+
+#mygif{
+	height: 40px;
+	width: 100px;
+}
+
+#toolbar {
+	position: absolute;
+	right: 200px;
+	bottom: 50px;
+	padding: 10px;
+	margin: 0;	
+}
+
+#gifarrow{
+	width: 20px;
+	display: block;
+	padding-bottom: 16px;
+	margin: auto;
+}
+
+#tools {
+	text-align: center;
+	display: none;
+}
+
+#tools img {
+	width: 50px;
+	display: block;
+	margin: auto;
+	padding: 20px;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+#tools img:hover{
+	opacity: 1;
+}
+
+section {
+	padding: 50px;
+	width: 80%;
+	margin: auto;
+	margin-top: 300px;
+	margin-bottom: 100px;
+	text-align: center;
+	padding: 50px;
+}
+
+section:last-of-type{
+	padding-bottom: 400px;
+}
+
+
+
+#downScroll {
+	position: absolute;
+	left: 0px;
+	right:0px;
+	bottom: 40px;
+	
+}
+
+#downScroll:hover {
+	opacity: 0.5;
+}
+
+#coverImg {
+	margin-top: 170px;
+	margin-bottom: 200px;
+	width: 400px;
+}
+
+.mainSection {
+	width: 100%;
+}
+
+#aboutMe {
+	background-color: black;
+	color: white;
+	height: 1000px;
+}
+
+#portfolio, #reflection {
+	background-color: #0F1626;
+	color: #F5F5F5;
+	opacity: 0.9;
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width: 100%;
+}
+
+#portfolio h1{
+	margin: 0;
+}
+
+.details{
+	position: relative;
+	background-color: #0F1626;
+	border-radius: 20px;
+	padding: 0;
+	opacity: 0.9;
+	top: 25%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top: 0;
+	width: 60%;
+	padding: 20px;
+	box-shadow: 10px 10px 5px black;
+}
+
+#reflection{
+	background-color: #AB987A;
+}
+
+#reflection .details{
+	background-color: white;
+	opacity: 0.6;
+	color: black;
+}
+
+#reflection button{
+	border-color: black;
+	color: black;
+}
+
+#reflection .details:hover{
+	box-shadow: 20px 20px 10px black;
+}
+
+.details p, .details h1{
+	pointer-events: none;
+}
+
+.details button{
+	z-index: 1;
+	position: relative;
+}
+
+.detailPart{
+	position: absolute;
+	height: 100%;
+	width: 25%;
+	padding: 0;
+	margin: 0;
+	display: block;
+	border-radius: 20px 0 0 20px;
+	top: 0;
+	opacity: 0;
+	z-index: 0;
+}
+
+.detailPart:hover{
+	opacity:0.8;
+}
+
+#detailsA{
+	left: 0px;
+	border-radius: 20px 0 0 20px;
+}
+
+#detailsB{
+	left: 25%;
+	border-radius: 0;
+}
+
+#detailsC{
+	left: 50%;
+	border-radius: 0;
+}
+
+#detailsP{
+	left: 75%;
+	border-radius: 0 20px 20px 0;
+}
+
+
+
+#portfolioBackground{
+	position: absolute;
+	opacity: 0.4;
+	width: inherit;
+	height: inherit;
+	display: block;
+	left: inherit;
+	top: inherit;
+}
+
+#profilePic {
+	width: 200px;
+}
+
+#backgroundImg {
+	opacity: 0.7;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}

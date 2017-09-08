@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Dion's portfolio</title>
+		<meta charset="utf-8">
+		
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="headerContent">
+				<a title="Home" href="index.html"><img src="images/logoIcon.png" class="headerItems" id="homeIcon"/></a>
+				<a title="About Me"href="aboutme.html"><img src="images/profileIcon.png" class="headerItems" id="aboutIcon"/></a>
+				<a title="Portfolio" href="portfolio.html"><img src="images/portfolioIcon.png" class="headerItems" id="portfolioIcon"/></a>
+				<a title="Reflection" href="reflection.html"><img src="images/reflectionIcon.png" class="headerItems" id="reflectionIcon"/></a>
+			</div>
+			<img src="images/downarrow.png" onclick="dropDown()" id="dropDownArrow"/>
+		</header>
+
+		<section id="title">
+			<h1>Dion Lao</h1>
+			<h2><em>Mechatronics and User Experience Design</em></h2>
+			<a href="aboutme.html"><button>About Me</button></a>
+			<div id="toolbar">
+				<img id="gifarrow" src="images/uparrow.png"/>
+				<img id="mygif" src="images/dion.gif"/>
+				<div id="tools">
+					<img title="Facebook" src="images/facebook.png"/>
+					<img title="Email" src="images/email.png"/>
+					<a target="_blank" href="http://s43933628deco1800journal.blogspot.com.au/"><img title="Blogger" src="images/blogger.png"/></a>
+				</div>
+			</div>
+			<img id="logo" src="images/MyLogo3.png"/>
+			<img id="downScroll" class="scroller" onclick="scrollTo('#portfolio')" src="images/arrow.png"/>
+		</section>
+
+		<div id="nav" class="draggable">
+			<img onclick="scroll(0)" title="Go Up" src="images/uparrow.png">
+			<img class="pointers" title="Cover" id="current" onclick="scrollTo('#title');selectPointer(event)" src="images/navPointer.png">
+			<img class="pointers" title="Portfolio" onclick="scrollTo('#portfolio')" src="images/navPointer.png">
+			<img class="pointers" title="Reflection" onclick="scrollTo('#reflection')" src="images/navPointer.png">
+			<img onclick="scroll(1)" title="Go Down" src="images/downarrow.png">
+		</div>
+
+		
+
+		<section id="portfolio">
+			<img id="portfolioBackground" src="images/books.jpg"/>
+			<div class="details">
+				<img class="detailPart" id="detailsA" src="images/partA.png"/>
+				<img class="detailPart" id="detailsB" src="images/partB.png"/>
+				<img class="detailPart" id="detailsC" src="images/partC.png"/>
+				<img class="detailPart" id="detailsP" src="images/partP.png"/>
+				<h1>Portfolio</h1>
+				<p>
+					Have a look into my documentation of my contributions towards the DECO1800 project Virtual Wall.
+				</p>
+				<button><a href="portfolio.html">Portfolio</a></button>
+				<br></br>
+				<img class="scroller" onclick="scrollTo('#reflection')" src="images/arrow.png"/>
+
+			</div>
+
+			
+
+		</section>
+
+		<section id="reflection">
+			<div class="details">
+				<h1>Reflection</h2>
+				<p>
+					Here are my thoughts an reflections on the course and how it turned out. 
+				</p>
+				<button><a href="reflection.html">Reflection</a></button>
+			</div>
+
+		</section>
+
+		<footer>
+			<p>Website created by Dion Lao</p>
+			<p>Contact me on 0422 629 006</p>
+			<p>DECO1800 Project - Virtual Wall</p>
+		</footer>
+
+	</body>
+</html>
