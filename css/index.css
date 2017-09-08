@@ -103,6 +103,7 @@ section p{
 	padding: 20px;
 	opacity: 0.5;
 	cursor: pointer;
+	border-radius: 2em 2em 2em 2em;
 }
 
 #tools img:hover{
