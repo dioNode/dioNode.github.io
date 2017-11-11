@@ -11,3 +11,16 @@
 #FF533D - Coral
 #F5F5F5 - EggShell
 */
+
+$(document).ready(function() {
+	
+	setTimeout(function(){
+		$('body').addClass('loaded');
+		start_main_animation();
+	}, 1000);
+	
+});
+
+function start_main_animation() {
+	
+}
