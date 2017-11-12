@@ -13,20 +13,16 @@
 */
 
 $(document).ready(function() {
+
+	init_hovers();
 	
 	setTimeout(function(){
 		$('body').addClass('loaded');
 		start_main_animation();
 	}, 2000);
-	
-
-	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-	particlesJS.load('../particles-js', 'particles.json', function() {
-	  console.log('callback - particles.js config loaded');
-});
 
 
-});
+});	
 
 function start_main_animation() {
 	$("#logo").fadeTo( 3000 , 0.3, function() {
@@ -36,4 +32,15 @@ function start_main_animation() {
 
 function animate_title() {
 	var title = "Dion sup";
+}
+
+function init_hovers() {
+	$( "#subheading-wrapper .right" ).hover(
+		function() {
+			$( "#subheading-wrapper .right .text" ).fadeIn("slow");
+			console.log("in");
+	  	}, function() {
+	    	$( "#subheading-wrapper .right .text" ).fadeOut("slow");
+	  }
+	);
 }
