@@ -33,19 +33,19 @@ body {
 }
 
 #title h1, #title h2{
-	left: 500px;
+	left: 30%;
 	position: absolute;
 	color: white;
 }
 
 #title h1{
-	top: 200px;
+	top: 20%;
 	font-size: 100px;
 	color: white	;
 }
 
 #title h2{
-	top: 400px;
+	top: 40%;
 
 }
 
