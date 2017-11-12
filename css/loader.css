@@ -32,9 +32,10 @@
 .wire {
     position: absolute;
     width: 30vw;
-    height: 3px;
+    height: 5vw;
     left: 35vw;
-    top: 57vh;
+    top: 50vh;
+    margin: 2.5vw;
     opacity: 0.5;
     background: white; /* For browsers that do not support gradients */
     animation: current 1.5s linear infinite;
