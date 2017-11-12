@@ -1,14 +1,14 @@
 
 #loader1 {
     left: 30vw;
-    top: 50vh;
+    top: 40vh;
     width: 10vw;
     height: 10vw;
 }
 
 #loader2 {
     left: 30vw;
-    top: 50vh;
+    top: 40vh;
     width: 5vw;
     height: 5vw;
     margin: 2.5vw;
@@ -16,14 +16,14 @@
 
 #loader3 {
     left: 60vw;
-    top: 50vh;
+    top: 40vh;
     width: 10vw;
     height: 10vw;
 }
 
 #loader4 {
     left: 60vw;
-    top: 50vh;
+    top: 40vh;
     width: 5vw;
     height: 5vw;
     margin: 2.5vw;
@@ -34,7 +34,7 @@
     width: 30vw;
     height: 2vw;
     left: 30vw;
-    top: 50vh;
+    top: 40vh;
     margin: 4vw;
     opacity: 0.5;
     background: white; /* For browsers that do not support gradients */

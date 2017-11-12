@@ -22,11 +22,12 @@ body {
 
 	#subheading-wrapper .right {
 		position: absolute;
+		pointer-events: auto;
 		text-align: center;
-		top:50%;
+		top:0;
 		right: 0;
-		
-		
+		width: 5%;
+		height: 100%;		
 	}
 
 		#subheading-wrapper .right .text {
@@ -42,7 +43,8 @@ body {
 			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 			font-size: 40px;
-			color: white;
+			position: relative;
+			top: 50%;
 		}
 
 #logo{
@@ -51,7 +53,7 @@ body {
 	opacity: 0;
 	left: 150px;
 	top: 100px;
-	z-index: 1000;
+	z-index: 100;
 }
 	
 #title{
@@ -67,20 +69,26 @@ body {
 	pointer-events: none;
 }
 
-#title h1, #title h2{
-	left: 30%;
+#title .text {
 	position: absolute;
+	text-align: left;
+	top: 40%;
+	left: 40%;
+	pointer-events: auto;
+}
+
+#title h1, #title h2{
 	color: white;
+	z-index: 101;
+	margin: 0;
 }
 
 #title h1{
-	top: 20%;
 	font-size: 100px;
 	color: white	;
 }
 
 #title h2{
-	top: 40%;
 
 }
 
