@@ -17,10 +17,16 @@ $(document).ready(function() {
 	setTimeout(function(){
 		$('body').addClass('loaded');
 		start_main_animation();
-	}, 1000);
+	}, 2000);
 	
 });
 
 function start_main_animation() {
-	
+	$("#logo").fadeTo( 3000 , 0.3, function() {
+    	animate_title();
+  	});
+}
+
+function animate_title() {
+	var title = "Dion sup";
 }

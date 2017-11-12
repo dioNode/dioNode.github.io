@@ -15,7 +15,7 @@ body {
 #logo{
 	position: relative;
 	display:block;
-	opacity: 0.3;
+	opacity: 0;
 	left: 150px;
 	top: 100px;
 }
@@ -49,3 +49,9 @@ body {
 
 }
 
+/* The element to apply the animation to */
+#weirdthingexample {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
