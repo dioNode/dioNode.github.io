@@ -20,6 +20,7 @@ var requestAnimationFrame = window.requestAnimationFrame ||
 var i = 0;
 var counter = 0;
 var requestID;
+var toggleSpeed = 500;
 
 $(document).ready(function() {
 
@@ -54,7 +55,7 @@ function fade_in_title() {
 }
 
 function animate_title() {
-	swoop_symbol("#title h1", "Dion Lao", "_", 5, false);
+	//swoop_symbol("#title h1", "Dion Lao", "_", 5, false);
 
 }
 
@@ -85,19 +86,22 @@ function swoop_symbol(divtext, text, symbol, frameRate, infinite) {
 }
 
 function init_hovers() {
+	$( "#subheading-wrapper .right .text" ).animate({fontSize:"toggle"}, toggleSpeed);
 	$( "#subheading-wrapper .right" ).hover(
 		function() {
-			//$( "#subheading-wrapper .right .text" ).slideIn("slow");
-			console.log("in");
+			$( "#subheading-wrapper .right .text" ).animate({fontSize:"toggle"}, toggleSpeed);
+			$("#subheading-wrapper .cogwheel").addClass("spin");
 	  	}, function() {
-	    	//$( "#subheading-wrapper .right .text" ).fadeOut("slow");
+	    	$( "#subheading-wrapper .right .text" ).animate({fontSize:"toggle"}, toggleSpeed);
+	    	$("#subheading-wrapper .cogwheel").removeClass("spin");
 	  }
 	);
 
 	$("#title .text").mouseover(function() {
-		i = 0;
-		window.cancelAnimationFrame(requestID);
-		//swoop_symbol("#title h1", "Dion Lao", "  ", 2, false);
-		swoop_symbol("#title h2", "Information Technology and Mechatronics Engineering", "劉忠銘", 1, false);
+		//i = 0;
+		//window.cancelAnimationFrame(requestID);
+		//swoop_symbol("#title h1", "Dion Lao", "劉忠銘", 2, false);
+		if (i==0)
+			swoop_symbol("#title h2", "Information Technology and Mechatronics Engineering", "&nbsp &nbsp", 1, false);
 	})
 }
