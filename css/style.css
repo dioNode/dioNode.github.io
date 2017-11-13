@@ -2,3 +2,9 @@
 	-webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
+
+.rainbow {
+	animation-name: rainbow;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}

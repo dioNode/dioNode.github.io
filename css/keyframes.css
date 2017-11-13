@@ -23,6 +23,14 @@
     }
 }
 
+@keyframes rainbow {
+    0%   {background-color: white;}
+    25%  {background-color: yellow;}
+    50%  {background-color: green;}
+    90% {background-color: red;}
+    100% {background-color: white;}
+}
+
 
 @keyframes current {
     0%   {  background: -webkit-linear-gradient(left, #0F1626, #0F1626); /* For Safari 5.1 to 6.0 */
