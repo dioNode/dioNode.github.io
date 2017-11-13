@@ -64,7 +64,7 @@ function swoop_symbol(divtext, text, symbol, frameRate, infinite) {
 	originText = text;
 	if (i<text.length) {
 		text = text.substring(0,i) + symbol + text.substring(i+1, text.length);
-		$(div).text(text);
+		$(div).html(text);
 	} else if (i > text.length + 20) {
 		i = 0;
 		if (!infinite)
@@ -97,6 +97,7 @@ function init_hovers() {
 	$("#title .text").mouseover(function() {
 		i = 0;
 		window.cancelAnimationFrame(requestID);
-		swoop_symbol("#title h1", "Dion Lao", "_", 2, false);
+		//swoop_symbol("#title h1", "Dion Lao", "  ", 2, false);
+		swoop_symbol("#title h2", "Information Technology and Mechatronics Engineering", "劉忠銘", 1, false);
 	})
 }
