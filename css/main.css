@@ -3,6 +3,7 @@ body {
 	background-color: #F5F5F5;
 	text-align: center;
 	color: #D1D3CF;
+	overflow: hidden;
 }
 
 .main {
@@ -186,9 +187,7 @@ body {
 	}
 
 .highlighted {
-	background: rgb(0, 0, 255); /* Fall-back for browsers that don't
-                                    support rgba */
-    background: rgba(0, 0, 255, .2);
+    background: rgba(255, 255, 255, .05);
 }
 
 #logo{
