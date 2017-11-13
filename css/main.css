@@ -175,7 +175,7 @@ body {
 		position: absolute;
 		width: 10px;
 		height:10px;
-		opacity: 0.5;
+		opacity: 0.8;
 		border-radius: 5px;
 		margin: 20px;
 	}
@@ -217,6 +217,7 @@ body {
 	top: 40%;
 	left: 40%;
 	pointer-events: auto;
+	opacity: 0;
 }
 
 #title h1, #title h2{
