@@ -22,7 +22,7 @@ var counter = 0;
 var requestID;
 var toggleSpeed = 500;
 var expandDistance = 200;
-var transitionTimer = 2000;
+var transitionTimer = 1500;
 
 $(document).ready(function() {
 
@@ -96,14 +96,14 @@ function transitionRight() {
 	$("#subheading-wrapper .right").unbind("mouseenter mouseleave").removeClass("highlighted");
 	$("#subheading-wrapper .right").children().fadeOut(transitionTimer);
 	$(":not(#subheading-wrapper .right)").fadeOut(transitionTimer);
-	$("#subheading-wrapper .right").animate({opacity:"1", width:"100%", zIndex:"1004", backgroundColor:"white"}, transitionTimer);
+	$("#subheading-wrapper .right").animate({opacity:"1", width:"100%", zIndex:"1004", backgroundColor:"white"}, transitionTimer, function() {window.open ('html/portfolio.html','_self',false)});
 }
 
 function transitionLeft() {
 	$("#subheading-wrapper .left").unbind("mouseenter mouseleave").removeClass("highlighted");
 	$("#subheading-wrapper .left").children().fadeOut(transitionTimer);
 	$(":not(#subheading-wrapper .left)").fadeOut(transitionTimer);
-	$("#subheading-wrapper .left").animate({opacity:"1", width:"100%", zIndex:"1004", backgroundColor:"white"}, transitionTimer);
+	$("#subheading-wrapper .left").animate({opacity:"1", width:"100%", zIndex:"1004", backgroundColor:"white"}, transitionTimer, function() {window.open ('html/profile.html','_self',false)});
 }
 
 function init_hovers() {
