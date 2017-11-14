@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+section {
+	position: relative;
+	width: 100vw;
+}
+
+#cover{
+	height: 100vh;
+	background-image: url("../images/dark_background.jpg");
+	background-size: 100% 100%;
+	background-color: black;
+}
+
+#cover .quote {
+	position: relative;
+	color: white;
+	opacity: 0.5;
+	font-size: 5vh;
+	margin: auto;
+	padding: 30vh;
+	text-align: center;
+	z-index: 100;
+}
+
+#cover img {
+	position: absolute;
+	height: 80%;
+	bottom: 0;
+	left: 0;
+}
+
+#skills {
+	height: 60vh;
+}
