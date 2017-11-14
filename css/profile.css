@@ -1,8 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	height: 100%;
-	width: 100%;
+	background-color: black;
 }
 
 section {
@@ -35,6 +34,18 @@ section {
 	left: 0;
 }
 
-#skills {
-	height: 60vh;
+#background {
+	background-color: #0F1626;
+	padding: 100px 0 100px 0;
+}
+
+#background p {
+	text-align: center;
+	font-size: 60px;
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	color: white;
+	opacity: 0.7;
+	padding: 100px;
 }

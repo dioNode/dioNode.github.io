@@ -65,8 +65,8 @@ function transitionRight() {
 function transitionLeft() {
 	$("#subheading-wrapper .left").unbind("mouseenter mouseleave").removeClass("highlighted");
 	$("#subheading-wrapper .left").children().fadeOut(transitionTimer);
-	$(":not(#subheading-wrapper .left)").fadeOut(transitionTimer);
-	$("#subheading-wrapper .left").animate({opacity:"1", width:"100%", zIndex:"1004", backgroundColor:"white"}, transitionTimer, function() {window.open ('html/profile.html','_self',false)});
+	$("#title").fadeOut(transitionTimer);
+	$("#subheading-wrapper .left").animate({opacity:"1", width:"100%", zIndex:"1004", backgroundColor:"black"}, transitionTimer, function() {window.open ('html/profile.html','_self',false)});
 }
 
 function init_hovers() {
