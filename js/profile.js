@@ -35,9 +35,9 @@ function init_home_interaction() {
 
 	$( "#cover .home" ).hover(
 	  function() {
-	    $( this ).animate({opacity:"1"},200);
+	    $( this ).stop().animate({opacity:"1"},200);
 	  }, function() {
-	    $( this ).animate({opacity:"0.7"},200);
+	    $( this ).stop().animate({opacity:"0.7"},200);
 	  }
 	);
 }
