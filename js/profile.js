@@ -18,7 +18,17 @@ $(document).ready(function() {
 	arrangeExperiences();
 
 	init_home_interaction();
+	init_skills_interaction();
 });
+
+function init_skills_interaction() {
+	$("#skills .skill p").hide();
+	$("#skills .skill").hover(function(){
+		$(this).find("p").show();
+	}, function() {
+		$(this).find("p").hide();
+	})
+}
 
 function init_home_interaction() {
 	$("#experiences .exp").click(expandExperience);
