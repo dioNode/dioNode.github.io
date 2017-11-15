@@ -27,7 +27,18 @@ section {
 	z-index: 100;
 }
 
-#cover img {
+#cover .home {
+	position: absolute;
+	height: 50px;
+	top: 0;
+	right:0;
+	opacity: 0.7;
+	margin: 50px;
+	cursor: pointer;
+	z-index: 103;
+}
+
+#cover .profilepic {
 	position: absolute;
 	height: 80%;
 	bottom: 0;
@@ -97,6 +108,7 @@ h1 {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-size: cover;
+	cursor: pointer;
 }
 
 .exp.expanded {

@@ -8,15 +8,19 @@ $(document).ready(function() {
 	$("#experiences .exp").children().hide();
 
 	AOS.init({
-    offset: 200,
-    duration: 1000,
-    easing: 'ease-in-sine',
-    delay: 100,
-  });
+	    offset: 200,
+	    duration: 1000,
+	    easing: 'ease-in-sine',
+	    delay: 100,
+ 	 });
 
 	storeDates();
 	arrangeExperiences();
 
+	init_home_interaction();
+});
+
+function init_home_interaction() {
 	$("#experiences .exp").click(expandExperience);
 	$("section").click(function(event){
 		event.preventDefault();
@@ -24,7 +28,23 @@ $(document).ready(function() {
 			hideExperiences();
 		}
 	});
-});
+
+	$("#cover .home").click(function(){
+		transitionHome();
+	})
+
+	$( "#cover .home" ).hover(
+	  function() {
+	    $( this ).animate({opacity:"1"},200);
+	  }, function() {
+	    $( this ).animate({opacity:"0.7"},200);
+	  }
+	);
+}
+
+function transitionHome() {
+	$("body").children().fadeOut(1000, function(){window.open ('../index.html','_self',false)});
+}
 
 function expandExperience() {
 	//this.prevendDefault();
