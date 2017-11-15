@@ -18,26 +18,44 @@ $(document).ready(function() {
 	arrangeExperiences();
 
 	$("#experiences .exp").click(expandExperience);
+	$("section").click(function(event){
+		event.preventDefault();
+		if($(event.target).closest('#timeline .exp').length != 1){
+			hideExperiences();
+		}
+	});
 });
 
 function expandExperience() {
+	//this.prevendDefault();
 	hideExperiences();
-	$(this).addClass("expanded").children().show();
+	$(this).addClass("expanded").find(".container").show();
 	$(this).animate({
 		width: $(this).get(0).scrollWidth,
 		height: $(this).get(0).scrollHeight,
 		opacity: 0.9
 	}, 400);
-
+	var imgurl = $(this).find(".background").attr("src");
+	$(this).css("background-image", 'url("'+imgurl+'")');
 }
 
 function hideExperiences() {
-	$("#experiences .exp").children().fadeOut();
-	$("#experiences .exp").animate({
+	console.log(this.defaultPrevented);
+	for (var date in experiences) {
+		hideExperience(experiences[date]);
+	}
+}
+
+function hideExperience(exp) {
+	$(exp).children().hide();
+	$(exp).removeClass("expanded");
+	$(exp).animate({
 		width: "30px",
 		height:"30px",
 		opacity: 1
 	},200)
+	var imgurl = $(exp).find(".icon").attr("src");
+	$(exp).css("background-image", 'url("'+imgurl+'")');
 }
 
 function storeDates() {
@@ -57,8 +75,7 @@ function arrangeExperiences() {
 	for (var date in experiences) {
 		var percentage = 100*(date-min)/(max-min);
 		$(experiences[date]).css("top",percentage+"%");
-		var imgurl = $(experiences[date]).find("img").attr("src");
-		console.log(imgurl);
+		var imgurl = $(experiences[date]).find(".icon").attr("src");
 		$(experiences[date]).css("background-image", 'url("'+imgurl+'")');
 	}
 }
