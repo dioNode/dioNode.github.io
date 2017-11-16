@@ -17,6 +17,7 @@ $(document).ready(function() {
 	storeDates();
 	arrangeExperiences();
 
+	init_expand_interactions();
 	init_home_interaction();
 	init_skills_interaction();
 });
@@ -30,7 +31,7 @@ function init_skills_interaction() {
 	})
 }
 
-function init_home_interaction() {
+function init_expand_interactions() {
 	$("#experiences .exp").click(expandExperience);
 	$("section").click(function(event){
 		event.preventDefault();
@@ -38,19 +39,8 @@ function init_home_interaction() {
 			hideExperiences();
 		}
 	});
-
-	$("#cover .home").click(function(){
-		transitionHome();
-	})
-
-	$( "#cover .home" ).hover(
-	  function() {
-	    $( this ).stop().animate({opacity:"1"},200);
-	  }, function() {
-	    $( this ).stop().animate({opacity:"0.7"},200);
-	  }
-	);
 }
+
 
 function transitionHome() {
 	$("body").children().fadeOut(1000, function(){window.open ('../index.html','_self',false)});

@@ -37,3 +37,24 @@ function swoop_symbol(divtext, text, symbol, frameRate, infinite) {
 	requestID = requestAnimationFrame(function() {swoop_symbol(divtext, originText, symbol, frameRate, infinite)});
 
 }
+
+function init_home_interaction() {
+
+
+	$("#cover .home").click(function(){
+		transitionHome();
+	})
+
+	$( "#cover .home" ).hover(
+	  function() {
+	    $( this ).stop().animate({opacity:"1"},200);
+	  }, function() {
+	    $( this ).stop().animate({opacity:"0.7"},200);
+	  }
+	);
+}
+
+
+function transitionHome() {
+	$("body").children().fadeOut(1000, function(){window.open ('../index.html','_self',false)});
+}
