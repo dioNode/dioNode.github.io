@@ -29,10 +29,13 @@ section {
 		position: relative;
 		border-radius: 0.4em;
 		margin: calc((100% - var(--dimensions))/2);
+		margin: auto;
 		padding: 20px;
 		top:0;
 		left:0;
 		overflow-y: scroll;
+		top: 50%;
+		transform: translate(0%, -50%);
 	}
 
 	#info-container::-webkit-scrollbar {
@@ -58,10 +61,20 @@ section {
 
 #cover {
 	background-color: black;
-	height: 70vh;
-	background-image: url("../images/aurora.jpg");
-	background-size: cover;
+	height: 35vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 0px 20px black;
+	z-index: 100;
 }
+	#cover #cover-logo {
+		position: absolute;
+		bottom: 0;
+		left: 10vw;
+		height: 100%;
+		opacity: 0.35;
+	}
 
 	#cover .home {
 		position: absolute;
@@ -74,10 +87,20 @@ section {
 		z-index: 103;
 	}
 
+	#cover h1 {
+		color: white;
+		opacity: 0.8;
+		font-size: 70px;
+		letter-spacing: 4px;
+	}
+
 #portfolios {
-	height: 1000px;
 	text-align: center;
 	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-content: space-between;
+	flex-wrap: wrap;
 }
 
 	#portfolios .work-container {
@@ -85,7 +108,7 @@ section {
 		width: 400px;
 		height: 400px;
 		background-color: white;
-		float: left;
+		/*float: left;*/
 		display: block;
 		cursor: pointer;
 	}

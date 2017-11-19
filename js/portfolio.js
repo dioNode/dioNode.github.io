@@ -27,8 +27,10 @@ function init_portfolio_interactions() {
 		openPortfolio();
 		var heading = $(this).find("h1").text();
 		var subheading = $(this).find("h2").text();
+		var details = $(this).find(".details").html();
 		$("#popup-container h1").text(heading);
 		$("#popup-container h2").text(subheading);
+		$("#popup-container .details").html(details);
 	})
 }
 
