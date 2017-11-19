@@ -42,9 +42,6 @@ function init_expand_interactions() {
 }
 
 
-function transitionHome() {
-	$("body").children().fadeOut(1000, function(){window.open ('../index.html','_self',false)});
-}
 
 function expandExperience() {
 	//this.prevendDefault();
