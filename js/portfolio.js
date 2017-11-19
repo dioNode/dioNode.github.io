@@ -32,6 +32,8 @@ function init_portfolio_interactions() {
 		$("#popup-container h2").text(subheading);
 		$("#popup-container .details").html(details);
 	})
+
+	$("#popup-container .close").click(closePortfolio);
 }
 
 function openPortfolio() {

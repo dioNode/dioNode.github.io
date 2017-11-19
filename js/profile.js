@@ -11,7 +11,7 @@ $(document).ready(function() {
 	    offset: 200,
 	    duration: 1000,
 	    easing: 'ease-in-sine',
-	    delay: 100,
+	    delay: 0,
  	 });
 
 	storeDates();
