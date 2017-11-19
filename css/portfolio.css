@@ -12,8 +12,8 @@ section {
 
 #cover {
 	background-color: black;
-	height: 500px;
-	background-image: url("../images/northen_lights1.jpg");
+	height: 70vh;
+	background-image: url("../images/aurora.jpg");
 	background-size: cover;
 }
 
@@ -70,6 +70,10 @@ section {
 			font-size: 20px;
 			opacity: 0.5;
 			letter-spacing: 2px;
+		}
+
+		#portfolios .details {
+			display: none;
 		}
 
 .bulge {
