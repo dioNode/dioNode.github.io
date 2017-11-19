@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$("body").children().hide();
-	$("body").children().fadeIn(2000);
+	$("body").children(":not(#popup-container)").fadeIn(2000);
 
 	init_home_interaction();
 	init_portfolio_hovers();
