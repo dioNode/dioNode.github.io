@@ -10,6 +10,51 @@ section {
 	margin: 0;
 }
 
+#popup-container {
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+	top:0;
+	position: fixed;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1001;
+}
+
+	#info-container {
+		--dimensions: 50%;
+		width: var(--dimensions);
+		height: var(--dimensions);
+		background-color: white;
+		position: relative;
+		border-radius: 0.4em;
+		margin: calc((100% - var(--dimensions))/2);
+		padding: 20px;
+		top:0;
+		left:0;
+		overflow-y: scroll;
+	}
+
+	#info-container::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+	}
+
+		 #info-container h1 {
+			 text-align: center;
+			 text-transform: uppercase;
+			 letter-spacing: 4px;
+		 }
+
+		 #info-container h2 {
+			 text-align: center;
+			 text-transform: uppercase;
+			 opacity: 0.5;
+		 }
+
+		 #info-container p {
+
+		 }
+
 #cover {
 	background-color: black;
 	height: 500px;
