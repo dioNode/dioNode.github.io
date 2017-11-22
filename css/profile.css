@@ -140,64 +140,72 @@ h1 {
 	}
 
 	#skills .skill {
-		padding: 20px;
+		padding: 16px;
 		display: inline-block;
 		float: left;
 		position: relative;
 		background-color: white;
-		margin: 20px;
+		margin: 10px;
 		border-radius: 20px;
 		text-align: center;
+		--diameter: 30px;
+		overflow: hidden;
+		width: 150px;
+		height: 15px;
 	}
 
+		#skills .skill .progress {
+			--progress: 50;
+			--angle: calc((var(--progress)/100) * 180deg);
+			width: calc(var(--diameter)/2);
+			height: var(--diameter);
+			background-color: purple;
+			border-radius: var(--diameter) 0 0 var(--diameter);
+			position: absolute;
+			right:0;
+			transform: rotate(calc(var(--angle) - 180deg));
+			transform-origin: 100% 50%;
+		}
+
+		#skills .skill .background {
+			width: calc(var(--diameter)/2);
+			height: var(--diameter);
+			background-color: lightblue;
+			color: white;
+			border-radius: var(--diameter) 0 0 var(--diameter);
+			position: absolute;
+			right:0;
+		}
+
+
 		#skills .skill h1 {
-			font-size: 20px;
+			font-size: 18px;
 			padding: 0;
 			margin: 0;
 			color: black;
+			margin-right: calc(var(--diameter)/2);
 		}
 
-	#skills .mastery {
-		background-color: red;
+		#skills .skill .mastery {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			margin-top: 11px;
+		}
 
-	}
+		#skills .skill .details {
+			text-align: left;
+			position: relative;
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
 
+		#skills .skill .details ul {
+			margin: 5px;
+			padding:5px;
+			font-size: 14px;
+		}
 
-#skills .mastery {
-  position: relative;
-  /*margin: 7em auto;*/
-  margin: 0;
-  width: 40px;
-  height:40px;
-  border-radius: 50%;
-  background: lightblue;
-  float: right;
-}
-
-#skills .progress {
-  overflow: hidden;
-  position: absolute;
-  /* make sure top & left values are - the width of the border */
-  /* the bottom right corner is the centre of the parent circle */
-  top: -0.5em;
-  right: 50%;
-  bottom: 50%;
-  left: -0.5em;
-  /* the transform origin is the bottom right corner */
-  transform-origin: 100% 100%;
-  /* rotate by any angle */
-  /* the skew angle is 90deg - the angle you want for the arc */
-  transform: rotate(45deg) skewX(30deg);
-}
-
-#skills .progress:before {
-  box-sizing: border-box;
-  display: block;
-  border: solid 0.5em navy;
-  width: 200%;
-  height: 200%;
-  border-radius: 50%;
-  transform: skewX(-30deg);
-  content: '';
-}
 

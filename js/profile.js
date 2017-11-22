@@ -23,12 +23,24 @@ $(document).ready(function() {
 });
 
 function init_skills_interaction() {
-	$("#skills .skill p").hide();
 	$("#skills .skill").hover(function(){
-		$(this).find("p").show();
+
+		$(this).stop().animate({
+			height: $(this).get(0).scrollHeight
+		}, 400);
+
 	}, function() {
-		$(this).find("p").hide();
+		$(this).stop().animate({
+			height: "15px"
+		}, 400);
 	})
+
+	$("#skills .skill").each(function() {
+		var progress = $(this).attr("tag");
+		$(this).find(".progress").get(0).style.setProperty("--progress",progress);
+	})
+
+
 }
 
 function init_expand_interactions() {
