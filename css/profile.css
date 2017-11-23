@@ -249,6 +249,7 @@ h1 {
 		position: absolute;
 		left: 50%;
 		top: 50%;
+		cursor: pointer;
 	}
 
 		#hobbies .hobby h1 {
@@ -256,18 +257,20 @@ h1 {
 			text-align: center;
 			margin: 10px;
 			padding: 0;
+			pointer-events: none;
 		}
 
 		#hobbies .hobby p {
 			font-size: 12px;
 			text-align: left;
 			margin: 10px;
+			pointer-events: none;
 		}
 
 
 .hovering {
-	-moz-box-shadow: 0 0 1em #fff;
-	-webkit-box-shadow: 0 0 1em #fff;
-    box-shadow: 0 0 1em #fff;
+	-moz-box-shadow: 0 0 2em #fff;
+	-webkit-box-shadow: 0 0 2em #fff;
+    box-shadow: 0 0 2em #fff;
     z-index: 101;
 }

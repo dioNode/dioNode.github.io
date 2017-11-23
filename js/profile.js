@@ -31,21 +31,25 @@ function init_hobby_floats() {
 		var icon = $(this).find(".icon").attr("src");
 		$(this).css("background-image","url('"+icon+"')");
 	});
-	$(".hobby").hover(function(){
-		$(this).stop().jqFloat("stop");
-		$(this).addClass("hovering");
+
+
+	$(".hobby").click(function(){
+		$(this).jqFloat("stop");
 		$(this).children(":not(img)").fadeIn();
 		if (isOverflow($(this))){
 			inflate($(this));
 		}
 		$(this).css("background-image", "none");
+	})
 
+	$(".hobby").hover(function(){
+
+		$(this).addClass("hovering");
+		$(this).stop().jqFloat("stop");
+		
 	}, function(){
-		$(this).removeClass("hovering");
-		$(this).children().hide();
-		var icon = $(this).find(".icon").attr("src");
-		$(this).css("background-image","url('"+icon+"')");
-		$(this).stop().animate({
+
+		$(this).animate({
 			width: "70px",
 			height: "70px"
 		}, {
@@ -54,6 +58,11 @@ function init_hobby_floats() {
 				$(this).jqFloat("play");
 			}
 		})
+		$(this).removeClass("hovering");
+		$(this).children().hide();
+		var icon = $(this).find(".icon").attr("src");
+		$(this).css("background-image","url('"+icon+"')");
+		
 	})
 }
 
