@@ -49,9 +49,14 @@ function init_hobby_floats() {
 		
 	}, function(){
 
+		var height = $(this).height();
+		var change = (height-70)/2;
+
 		$(this).animate({
 			width: "70px",
-			height: "70px"
+			height: "70px",
+			top: "+="+change+"px",
+			left: "+="+change+"px"
 		}, {
 			duration: 400,
 			complete: function() {
