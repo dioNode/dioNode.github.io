@@ -234,4 +234,40 @@ h1 {
 		height:80%;
 		margin: auto;
 		border-radius: 10px;
+		/*display: flex;
+		justify-content: center;
+		align-items: center;*/
 	}
+
+	#hobbies .hobby {
+		--dim: 70px;
+		width: var(--dim);
+		height: var(--dim);
+		border-radius: calc(var(--dim)/2);
+		background-color: white;
+		background-size: 100% 100%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+	}
+
+		#hobbies .hobby h1 {
+			font-size: 16px;
+			text-align: center;
+			margin: 10px;
+			padding: 0;
+		}
+
+		#hobbies .hobby p {
+			font-size: 12px;
+			text-align: left;
+			margin: 10px;
+		}
+
+
+.hovering {
+	-moz-box-shadow: 0 0 1em #fff;
+	-webkit-box-shadow: 0 0 1em #fff;
+    box-shadow: 0 0 1em #fff;
+    z-index: 101;
+}

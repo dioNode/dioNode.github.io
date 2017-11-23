@@ -15,9 +15,65 @@ $(document).ready(function() {
 	init_expand_interactions();
 	init_home_interaction();
 	init_skills_interaction();
-
+	init_hobby_floats();
 	
 });
+
+
+function init_hobby_floats() {
+	$(".hobby").jqFloat({
+		width: $("#hobbies .container").width()/2,
+		height: $("#hobbies .container").height()/2,
+		speed: 4000
+	});
+	$(".hobby").children().hide();
+	$(".hobby").each(function(){
+		var icon = $(this).find(".icon").attr("src");
+		$(this).css("background-image","url('"+icon+"')");
+	});
+	$(".hobby").hover(function(){
+		$(this).stop().jqFloat("stop");
+		$(this).addClass("hovering");
+		$(this).children(":not(img)").fadeIn();
+		if (isOverflow($(this))){
+			inflate($(this));
+		}
+		$(this).css("background-image", "none");
+
+	}, function(){
+		$(this).removeClass("hovering");
+		$(this).children().hide();
+		var icon = $(this).find(".icon").attr("src");
+		$(this).css("background-image","url('"+icon+"')");
+		$(this).stop().animate({
+			width: "70px",
+			height: "70px"
+		}, {
+			duration: 400,
+			complete: function() {
+				$(this).jqFloat("play");
+			}
+		})
+	})
+}
+
+function inflate(div) {
+	$(div).animate({
+		width : "+=10px",
+		height: "+=10px",
+	}, {
+		duration: 40,
+		complete: function() {
+			if (isOverflow(div))
+				inflate($(div));
+			console.log("cool");
+		}
+	});
+}
+
+function isOverflow(div) {
+	return $(div)[0].scrollHeight > $(div)[0].clientHeight || $(div)[0].scrollWidth > $(div)[0].clientWidth;
+}
 
 function init_scroll_fades() {
 	AOS.init({
