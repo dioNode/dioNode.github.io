@@ -22,8 +22,8 @@ $(document).ready(function() {
 
 function init_hobby_floats() {
 	$(".hobby").jqFloat({
-		width: $("#hobbies .container").width()/2,
-		height: $("#hobbies .container").height()/2,
+		width: $("#hobbies .container").width()*0.7,
+		height: $("#hobbies .container").height()*0.7,
 		speed: 4000
 	});
 	$(".hobby").children().hide();
