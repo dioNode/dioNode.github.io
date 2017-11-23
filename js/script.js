@@ -12,6 +12,21 @@
 #F5F5F5 - EggShell
 */
 
+$(document).ready(function(){
+	$("#contacts img").hover(function(){
+		$(this).addClass("highlighted");
+	}, function() {
+		$(this).removeClass("highlighted");
+	})
+	var fadeTimer = setTimeout(function(){ $("#contacts").stop().fadeOut(1000); }, 3000);
+
+	$("body").mousemove(function(){
+		$("#contacts").stop().fadeIn();
+		clearTimeout(fadeTimer);
+		fadeTimer = setTimeout(function(){ $("#contacts").fadeOut(1000); }, 3000);
+	})
+})
+
 function swoop_symbol(divtext, text, symbol, frameRate, infinite) {
 
 	div = $(divtext);
@@ -41,7 +56,7 @@ function swoop_symbol(divtext, text, symbol, frameRate, infinite) {
 function init_home_interaction() {
 
 
-	$("#cover .home").click(function(){
+	$(".home").click(function(){
 		transitionHome();
 	})
 

@@ -8,3 +8,33 @@
     animation-duration: 20s;
     animation-iteration-count: infinite;
 }
+
+#contacts {
+	width: 100%;
+	position: fixed;
+	height: 35px;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	padding: 10px;
+}
+
+	#contacts img {
+		height: 80%;
+		margin: 10px;
+		border-radius: 10px;
+		opacity: 0.7;
+		cursor: pointer;
+	}
+
+	#contacts img.home {
+		position: absolute;
+		right: 50px;
+		top: 0;
+		height: 100%;
+		opacity: 0.8;
+	}
+
+	#contacts img.highlighted {
+		opacity: 1;
+	}

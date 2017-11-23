@@ -26,7 +26,7 @@ section {
 	text-align: center;
 	z-index: 100;
 }
-
+/*
 #cover .home {
 	position: absolute;
 	height: 50px;
@@ -36,7 +36,7 @@ section {
 	margin: 50px;
 	cursor: pointer;
 	z-index: 103;
-}
+}*/
 
 #cover .profilepic {
 	position: absolute;
