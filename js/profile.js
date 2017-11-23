@@ -70,6 +70,8 @@ function inflate(div) {
 	$(div).animate({
 		width : "+=10px",
 		height: "+=10px",
+		left: "-=5px",
+		top: "-=5px"
 	}, {
 		duration: 40,
 		complete: function() {
