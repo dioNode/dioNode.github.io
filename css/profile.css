@@ -77,7 +77,6 @@ h1 {
 	font-size: 60px;
 }
 
-
 /* Timeline */
 
 #timeline {
@@ -98,26 +97,40 @@ h1 {
 		margin:auto;
 	}
 
-#experiences .exp {
-	position: absolute;
-	background-color: white;
-	width: 30px;
-	height: 30px;
-	border-radius: 15px;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-size: cover;
-	cursor: pointer;
-}
+	#experiences .exp {
+		position: absolute;
+		background-color: white;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-size: cover;
+		cursor: pointer;
+	}
 
-.exp.expanded {
-	border: solid yellow 2px;
-}
+	#experiences .exp p {
+		color: white;
+	}
 
-.exp .container {
-	width:60vw;
-}
+	#experiences .exp.expanded {
+		border: solid yellow 2px;
+		border-radius: 15px;
+	}
+
+	.exp .container {
+		width:60vw;
+	}
+		
+		#experiences .exp .age {
+			color: white;
+			font-weight: 800;
+			background-color: rgba(0,0,0,0.5);
+			border-radius: 50%;
+			margin: auto;
+			margin-top: 5px;
+		}
 
 /* Skills */
 #skills {

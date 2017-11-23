@@ -123,6 +123,22 @@ function init_expand_interactions() {
 			hideExperiences();
 		}
 	});
+
+	$("#experiences .exp").hover(function(){
+		if ($(this).hasClass("expanded"))
+			return;
+		$(this).stop().animate({width:"40px", height: "40px"},200);
+		$(this).append("<div class='age'>"+Math.floor($(this).attr("tag"))+"</div>");
+		/*var icon = $(this).find(".icon").attr("src");
+		$(this).css("background-image",icon);*/
+	}, function() {
+		if ($(this).hasClass("expanded"))
+			return;
+		$(this).stop().animate({width:"30px", height:"30px"}, 200);
+		$(".age").remove();
+
+		//$(this).css("background-image","none");
+	})
 }
 
 
@@ -131,13 +147,14 @@ function expandExperience() {
 	//this.prevendDefault();
 	hideExperiences();
 	$(this).addClass("expanded").find(".container").show();
-	$(this).animate({
+	$(this).stop().animate({
 		width: $(this).get(0).scrollWidth,
 		height: $(this).get(0).scrollHeight,
 		opacity: 0.9
 	}, 400);
 	var imgurl = $(this).find(".background").attr("src");
 	$(this).css("background-image", 'url("'+imgurl+'")');
+	$(this).css("z-index",101);
 }
 
 function hideExperiences() {
@@ -156,6 +173,7 @@ function hideExperience(exp) {
 	},200)
 	var imgurl = $(exp).find(".icon").attr("src");
 	$(exp).css("background-image", 'url("'+imgurl+'")');
+	$(exp).css("z-index",100);
 }
 
 function storeDates() {
@@ -172,6 +190,9 @@ function storeDates() {
 }
 
 function arrangeExperiences() {
+	/*min = 1997;
+	var d = new Date();
+	max = d.getFullYear();*/
 	for (var date in experiences) {
 		var percentage = 100*(date-min)/(max-min);
 		$(experiences[date]).css("top",percentage+"%");
