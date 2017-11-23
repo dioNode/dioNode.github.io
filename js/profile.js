@@ -160,7 +160,8 @@ function expandExperience() {
 		opacity: 0.9
 	}, 400);
 	var imgurl = $(this).find(".background").attr("src");
-	$(this).css("background-image", 'url("'+imgurl+'")');
+	$(this).css("background-image","none");
+	$(this).find("h1").css("background-image", 'url("'+imgurl+'")');
 	$(this).css("z-index",101);
 }
 
